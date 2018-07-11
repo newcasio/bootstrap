@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Contact - Bicycle Land</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Got a question?  Drop our experts a line."
+
+    <!-- Bootstrap CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Sonsie+One" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+
+  <body>
+    <div class="container">
+        <!--nav bar-->
+      <nav class="navbar navbar-expand-lg navbar-light bg-danger sticky-top">
+        <a class="navbar-brand text-light" style="font-family: 'Sonsie One', cursive;" href="index.html">BL</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item  mr-3">
+              <a class="nav-link  text-light" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown mr-3">
+              <a class="nav-link dropdown-toggle  text-light" href="products.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                The bikes
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="session.html">Trek Session</a>
+                <a class="dropdown-item" href="hightower.html">Santa Cruz HighTower</a>
+                <a class="dropdown-item" href="surface.html">Chromag Surface Ti</a>
+                <a class="dropdown-item" href="trance.html">Giant Trance Advanced</a>
+                <a class="dropdown-item" href="honzo.html">Kona Honzo Cr</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="products.html">See all the bikes</a>
+              </div>
+            </li>
+
+            <li class="nav-item mr-3">
+              <a class="nav-link  text-light" href="products.html">Shop</a>
+            </li>
+            <li class="nav-item active mr-3">
+              <a class="nav-link  text-light" href="contact.html">Contact</a>
+            </li>
+          </ul>
+          <span class="navbar-text my-0">
+            <p class="phone my-0 text-light">12 Bikelane Road, Sydney 2000</p>
+            <br>
+            <p class="phone my-0 text-light text-right">ph: (02) 481 1111</p>
+          </span>
+        </div>
+      </nav>
+
+      <!--breadcrumb-->
+
+
+      <nav aria-label="breadcrumb" role="navigation">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Contact</li>
+        </ol>
+      </nav>
+
+
+
+      <!--form--->
+  <div class="container bg-light pt-4">
+
+      <div class="row">
+  			<div class="col-sm-10 offset-1 bg-light">
+            <h3>Contact us</h3>
+  				<form name="contactForm" id="contactForm" method="post" action="mailto:ficticious@bikeland.com.au" enctype="text/plain">
+
+  					<div class="form-row">				<!--use form-row to put 2 fields side by side-->
+  						<div class="form-group mb-0 col-md-6">
+
+  							<label class="col-form-label" for="firstName">First Name</label>
+  							<input required class="form-control" type="text" name="firstName" id="firstName">
+  						</div>
+
+  						<div class="form-group col-md-6">
+  							<label class="col-form-label" for="lastName">Last Name</label>
+  							<input class="form-control" type="text" name="lastName" id="lastName">
+  						</div>
+  					</div>
+
+  					<div class="form-group">
+  						<label class="col-form-label" for="email">Email</label>
+  						<input class="form-control form-control" type="email" name="email" id="email">
+  					</div>
+
+  					<div class="form-group">
+  						<label class="col-form-label" for="tel">Contact number</label>
+  						<input class="form-control form-control" type="tel" name="tel" id="tel">
+  					</div>
+
+
+  					<!--radio horiz-->
+  					<div class="form-group">
+  						<h6>Are you an existing customer?</h6>
+  						<div class="form-check form-check-inline">
+  							<label class="form-check-label">
+  								<input class="form-check-input" type="radio" name="existing" id="customer1" value="existingCust">Yes
+  							</label>
+  						</div>
+
+  						<div class="form-check form-check-inline">
+  							<label class="form-check-label">
+  								<input class="form-check-input" type="radio" name="existing" id="customer0" value="newCust">No
+  							</label>
+  						</div>
+  					</div>
+
+
+
+
+  					<!--Drop down menu-->
+  					<div class="form-group">
+  						<label for="topic" class="col-form-label"><h6>Enquiry subject</h6></label>
+  						<select class="form-control" name="topic" id="topic">
+  							<option value="sales" id="t1">Sales</option>
+  							<option value="warranty" id="t2">Warranty</option>
+  							<option value="sponsor" id="t3">Sponsorship</option>
+  							<option value="other" id="t4">Other</option>
+  						</select>
+  					</div>
+
+
+
+  					<!-- text area message-->
+  					<div class="form-group">
+  						<label for="message" class="col-form-label"><h6>Message</h6></label>
+  						<textarea class="form-control" rows="6"name="message" id="message"></textarea>
+  					</div>
+
+            <div class="form-check">
+              <label class="form-check-label">
+                <input type="checkbox" class="form-check-input" name="addToNewsletter">
+                Please sign me up to the Bike Land newsletter
+              </label>
+            </div>
+  					<!-- submit button-->
+  					<div class="form-group">
+  						<input type="submit" class="btn btn-danger" value="Submit">
+  					</div>
+  				</form>
+  			</div>
+      </div>
+    </div>
+
+
+    <!--footer-->
+    <div>
+
+      <div class="container bg-light py-4 my-3">
+
+        <div class="row">
+
+            <div class="col-sm 4 border border-gray border-right-0 ml-3">
+              <h5>Support</h5>
+              <ul>
+                <li><a class="footer" href="#">Maintenance</a></li>
+                <li><a class="footer" href="#">Warranty</a></li>
+                <li><a class="footer" href="#">Replacement Parts</a></li>
+              </ul>
+            </div>
+            <div class="col-sm 4 border border-gray border-right-0 border-left-0">
+              <h5>Company</h5>
+              <ul>
+                <li><a class="footer" href="#">Company info</a></li>
+                <li><a class="footer" href="#">Work at Bike Land</a></li>
+              </ul>
+            </div>
+            <div class="col-sm 4 border border-gray border-left-0 mr-3">
+              <h5>Social media</h5>
+              <ul>
+                <li class="pt-2">
+                  <a class=" px-1" href="http://www.facebook.com" target="_blank"><img src="images/facebook.png" alt="facebook link"></a>
+                  <a class=" px-1" href="http://www.twitter.com" target="_blank"><img src="images/twitter.png" alt="twitter link"></a>
+                  <a class=" px-1" href="http://www.youtube.com" target="_blank"><img src="images/youtube.png" alt="youtube link"></a>
+                  <a class=" px-1" href="http://www.instagram.com" target="_blank"><img src="images/instagram.png" alt="instagram link"></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="pt-3">
+            <div class="row">
+              <div class="col-sm-12 text-center">
+                <a class="footer" href="#">Privacy Policy</a></li>
+                <p class="mb-0">&copy 2017</p>
+              </div>
+            </div>
+          </div>
+
+      </div>
+
+    </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  </body>
+</html>
